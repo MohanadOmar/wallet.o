@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallet.O</title>
+
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="/bootstrap-4.6.2-dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="/css/style.css" type="text/css">
+
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="container navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/home">Wallet.O</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="/new-account">Add Account</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/new-budget">Add Budget</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/new-record">New Record</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/logout">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Accounts Section -->
+      <div class="container home-main-section accounts-section">
+
+              <h1>Accounts</h1>
+              <div class="row">
+                <% accounts.forEach(function(account) { %>
+                  <div class="col-4 account">
+                    <h6><%= account.name %></h6>
+                    <h3><%= account.balance %> EGP</h3>
+                  </div>
+                <% }) %>
+            </div>
+          
+      </div>
+
+      <!-- Budgets Section -->
+      <div class="container home-main-section budgets-section">
+
+              <h1>Budgets</h1>
+              <div class="row">
+              <% budgets.forEach(function(budget) { %>
+                <div class="col-4 budget">
+                  <h6><%= budget.name %></h6>
+                  <h3><%= budget.cost %> EGP</h3>
+                </div>
+              <% }) %>
+            </div>
+          
+      </div>
+
+      <!-- Records Section -->
+      <div class="container home-main-section budgets-section">
+
+        <h1>Records History</h1>
+        <div class="row">
+          <% records.forEach(function(record) { %>
+            <div class="col-4 budget">
+              <h6><%= record.name %></h6>
+              <h3>-<%= record.cost %> EGP</h3>
+              <form action="/delete-record/<%= record._id %>" method="post">
+                <button class="btn btn-dark" type="submit">Delete</button>
+              </form>
+            </div>
+          <% }) %>
+        </div>
+    
+      </div>
+
+      <!-- Money Section -->
+      <div class="container home-main-section money-section">
+
+              <h1>Total Balance</h1>
+              <h3><%= wholeBalance %> EGP</h3>          
+      </div>
+
+
+    <!-- Bootstrap Js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

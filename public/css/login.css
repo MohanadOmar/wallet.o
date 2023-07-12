@@ -1,0 +1,49 @@
+body {
+    background-color: #004B84;
+    padding: 2% 2% 0 2%;
+    font-family: 'Fugaz One', cursive;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.login-box {
+    margin: 80px auto;
+    background-color: #B4E4FF;
+    border: 2px solid #efefef;
+    border-radius: 10px;
+}
+
+.local-login {
+    margin-top: 60px;
+}
+
+.local-login h3 {
+    font-weight: bold;
+    color: #efefef;
+    text-align: center;
+}
+
+.local-login input {
+    margin: auto;
+    max-width: 90%;
+}
+
+.local-login .btn {
+    margin: 0 275px;
+    padding: 8px 60px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #B4E4FF;
+}
+
+.passport-login {
+    margin-top: 120px;
+    color: #efefef;
+}
+
+
+
+.vl {
+    border-left: 2px solid #efefef;
+    height: 320px;
+    margin: 40px 20px;
+}

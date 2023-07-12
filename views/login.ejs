@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Bootstrap Css -->
+    <link rel="stylesheet" href="/bootstrap-4.6.2-dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&family=IBM+Plex+Mono:wght@700&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome Kit -->
+    <script src="https://kit.fontawesome.com/5eb877632e.js" crossorigin="anonymous"></script>
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="/css/login.css" type="text/css">
+ 
+</head>
+<body>
+
+      <div class="container login-box">
+          <div class="row">
+            <div class="col-lg-8 local-login">
+              <h3>Login</h3>
+              <br>
+              <% if(err) { %>
+                <p style="color: red; margin-left: 40px;"><%= err %><br><a href="/register">don't have an account? Register now!</a></p>
+              <% } %>
+              <form action="/login" method="post">
+                <div class="mb-3">
+                  <input type="email" name="username" class="form-control" placeholder="Email Adress" aria-describedby="emailHelp">
+                </div>
+                <div class="mb-3">
+                  <input type="password" class="form-control" name="password" placeholder="Password">
+                </div>
+                <button type="submit" class="btn btn-light center">Login</button>
+              </form>
+            </div>
+            <div class="col-lg-1">
+              <div class="vl"></div>
+            </div>
+            <div class="col-lg-3 passport-login">
+              <p>Or register with:</p>
+              <a href="/auth/google"><i class="fa-brands fa-google"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-apple"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+              <hr>
+              <div>
+                <a href="/register">Don't have an account? Create one now and join us now!</a>
+              </div>
+            </div>
+          </div>
+      </div>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+body {
+    background-color: #004B84;
+    font-family: 'Fugaz One', cursive;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+.navbar {
+    border-radius: 100px;
+}
+
+.navbar li {
+    font-weight: bold;
+    /* Set the background color */
+    background: linear-gradient(to right, #14274E 0%, #F1F6F9 100%);
+    /* Mask the color to the text, and remove the rest  */
+    -webkit-background-clip: text;
+    /* Make the text fill color value transparent so the masked background color comes through */
+    -webkit-text-fill-color: transparent;
+}
+
+.login-box {
+    margin-top: 5rem;
+}
+
+.home-main-section {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.account {
+    background-color: #14274E;
+    max-height: fit-content;
+    max-width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: left;
+    padding: 10px;
+}
+
+.budget {
+    background-color: #14274E;
+    max-width: fit-content;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: left;
+    padding: 10px 10px 10px 10px;
+}
+
+.accounts-section {
+
+}
+
+.budgets-section {
+
+}
+
+.money-section {
+
+}

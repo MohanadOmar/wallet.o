@@ -1,0 +1,8 @@
+1. user auth
+
+2. add accounts (Credit card, Cash, Saving)
+
+3. all Credit widget
+
+4\. add monthly budget (Specify the monthly start/end date)
+

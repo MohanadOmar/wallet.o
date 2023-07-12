@@ -1,0 +1,206 @@
+body {
+    background-color: #004B84;
+    padding: 2% 2% 0 2%;
+    font-family: 'Fugaz One', cursive;
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+#Main {
+    margin: 0 12px;
+}
+
+.balance-box {
+    background-color: white;
+    color: #F7C8E0;
+    font-size: x-large;
+    height: 186px;
+    padding: 60px 10px;
+    border-color: #004B84;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.accounts-box {
+    background-color: #B4E4FF;
+    color: white;
+    height: 186px;
+    padding: 20px;
+    overflow-y: auto;
+    border-color: #004B84;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.data-analysis-box {
+    background-color: #F7C8E0;
+    color: white;
+    height: 338px;
+    padding: 10px;
+    border-color: #004B84;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.budgets-box {
+    background-color: #B4E4FF;
+    color: white;
+    height: 338px;
+    padding: 10px;
+    border-color: #004B84;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 318px;
+    overflow-y: auto;
+}
+
+.subsciptions-box {
+    background-color: #B4E4FF;
+    color: white;
+    height: 338px;
+    padding: 10px;
+    border-color: #004B84;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 318px;
+    overflow-y: auto;
+}
+
+.records-box {
+    background-color: #DFFFD8;
+    color: white;
+    height: 548px;
+    padding: 10px;
+    overflow-y: auto;
+    border-color: #004B84;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.add-account {
+    background-color: white;
+    max-width: 176px;
+    margin: 5px;
+    padding: 12px;
+    color: #F7C8E0;
+    border-radius: 10px;
+}
+
+.account {
+    background-color: white;
+    max-width: 206px;
+    margin: 5px;
+    color: #F7C8E0;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.account a {
+    margin-left: 75%;
+}
+
+.budget {
+    background-color: white;
+    max-width: 300px;
+    margin: 15px;
+    color: #F7C8E0;
+    border-radius: 10px;
+}
+
+.add-budget {
+    background-color: white;
+    max-width: 176px;
+    margin: 5px auto;
+    padding: 12px;
+    color: #F7C8E0;
+    border-radius: 10px;
+}
+
+
+#progressbar {
+    background-color: #DFFFD8;
+    border-radius: 10px;
+    /* (height of inner div) / 2 + padding */
+    padding: 0.5px;
+    max-width: 220px;
+    font-size: 9px;
+    position: relative;
+  }
+  #progressbar > div {
+    background-color: #F7C8E0;
+    /* Adjust with JavaScript */
+    height: 10px;
+    border-radius: 10px;
+    max-width: 220px;
+    font-size: 12px;
+  }
+  #progressbar span {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+  }
+
+
+@media only screen and (max-width: 600px) {
+    .balance-box {
+        max-width: 380px;
+        max-height: 138px;
+        margin: 0 auto;
+        padding: 30px;
+    }
+
+    .accounts-box {
+        margin-top: 10px;
+        max-height: 200px;
+        max-width: 380px;
+        margin: 10px auto 0 auto;
+    }
+
+    .add-account {
+        max-width: 47%;
+    }
+
+    .account {
+        max-width: 47%;
+    }
+
+    .account a {
+        margin-left: 69%;
+    }
+
+    .budget {
+        background-color: white;
+        max-width: 92%;
+        margin: 15px;
+        color: #F7C8E0;
+        border-radius: 10px;
+    }
+
+    .add-budget {
+        max-width: 172px;
+    }
+
+    .subsciptions-box {
+        max-width: 380px;
+        max-height: 300px;
+        margin: 10px auto 0 auto;
+    }
+
+    .budgets-box {
+        max-width: 380px;
+        margin: 10px auto 0 auto;
+        max-height: 300px;
+    }
+
+    .data-analysis-box {
+        display: none;
+        max-width: 380px;
+        max-height: 300px;
+        margin: 10px auto 0 auto;
+    }
+
+    .records-box {
+        max-width: 380px;
+        margin: 10px auto;
+        max-height: 300px;
+    }
+  }
